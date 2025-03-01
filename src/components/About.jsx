@@ -3,34 +3,35 @@ import { motion } from "framer-motion";
 
 const About = () => {
     return (
-        <section id="about" className="min-h-[70vh] flex items-center justify-center py-16 px-6 md:px-12 lg:px-24 mt-0">
-            <div className="max-w-5xl w-[100%] mx-auto flex flex-col md:flex-row items-center">
+        <section id="about" className="min-h-[70vh] flex items-center py-16 px-6 md:px-12 lg:px-24">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
 
-                {/* Animated & Hover Effect on Image */}
+                {/* Profile Image with Hover Effect */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    whileHover={{ scale: 1.1, rotate: [0, 2, -2, 0] }} // Wiggle effect on hover
-                    className="w-full md:w-1/2 flex justify-center"
+                    whileHover={{ scale: 1.05, rotate: [0, 2, -2, 0] }}
+                    class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0"
                 >
                     <img
                         src="/aboutgif.gif"
                         alt="Profile GIF"
-                        className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-2xl transition duration-300"
+                        class="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full shadow-2xl transition duration-300"
                     />
                 </motion.div>
 
-                {/* Text Content */}
-                <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12 text-center md:text-left">
-                    <h2 className="text-5xl font-bold mb-6">About Me</h2>
-                    <p className="text-lg leading-relaxed">
-                        I am a passionate software developer skilled in React.js, Next.js, AWS, and Three.js.
-                        I enjoy crafting immersive web experiences and solving complex technical challenges.
+                {/* About Me Text */}
+                <div class="w-full md:w-1/2 px-4 md:px-8 lg:pl-16 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">About Me</h2>
+                    <p class="text-base sm:text-lg leading-relaxed mb-4">
+                        Hi, I'm a <span className="text-grey-700 text-xl">Junior Software Developer</span> with a passion for building efficient and scalable applications. I specialize in <span className="text-grey-700 text-xl">C#, ASP.NET Core, SQL, Azure DevOps,</span> and <span className="text-grey-700 text-xl">ReactJS</span>. I thrive on solving complex problems and constantly aim to improve my skills.
                     </p>
-                    <p className="mt-4 text-lg leading-relaxed">
-                        With experience in frontend and cloud technologies, I aim to build scalable and efficient applications.
-                        Let's create something amazing together!
+                    <p class="text-base sm:text-lg leading-relaxed mb-4">
+                        With a strong foundation in both backend and frontend development, I enjoy transforming ideas into real-world applications. My experience with Azure DevOps helps me streamline development workflows and ensure high-quality deliverables.
+                    </p>
+                    <p class="text-base sm:text-lg leading-relaxed mb-4">
+                        I am eager to collaborate on challenging projects that push my limits and allow me to grow as a developer. Let's connect and create something incredible together!
                     </p>
                 </div>
 

@@ -10,7 +10,7 @@ export const Footer = () => {
                     {/* Brand and Description */}
                     <div className="space-y-4">
                         <div className="text-3xl text-amber-400 hover:text-amber-300 transition-transform transform hover:scale-105">
-                            MyBrand
+                            VASANTH
                         </div>
                         <p className="text-gray-400 text-[1.2em]">
                             Empowering businesses with innovative solutions and cutting-edge technology.
