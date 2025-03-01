@@ -10,26 +10,26 @@ export const Header = () => {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <a href="/" className="text-2xl font-bold text-amber-400 hover:text-amber-300 transition-transform transform hover:scale-105">
+                        <a href="/" className="text-3xl text-amber-400 hover:text-amber-300 transition-transform transform hover:scale-105">
                             MyBrand
                         </a>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8 items-center">
-                        <a href="#" className="hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#home" className=" text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             Home
                         </a>
-                        <a href="#" className="hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#about" className="text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             About
                         </a>
-                        <a href="#" className="hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#" className="text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             Projects
                         </a>
-                        <a href="#" className="hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#" className="text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             Skills
                         </a>
-                        <a href="#" className="hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#" className="text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             Contact
                         </a>
                     </div>
