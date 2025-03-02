@@ -5,7 +5,7 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="z-50 bg-gradient-to-r from-gray-900 to-gray-800 text-white shadow-lg fixed top-0 w-full">
+        <nav className="z-50 bg-gradient-to-r from-gray-900 to-gray-700 text-white shadow-lg fixed top-0 w-full">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
@@ -23,13 +23,16 @@ export const Header = () => {
                         <a href="#about" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             About
                         </a>
-                        <a href="#" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#projects" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             Projects
                         </a>
-                        <a href="#" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#experience" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                            Experience
+                        </a>
+                        <a href="#skills" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             Skills
                         </a>
-                        <a href="#" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
+                        <a href="#contact" className="px-2 text-[1.2em] hover:text-amber-400 transition-all duration-300 transform hover:translate-y-1">
                             Contact
                         </a>
                     </div>
@@ -64,13 +67,16 @@ export const Header = () => {
                         <a href="#about" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
                             About
                         </a>
-                        <a href="#" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
+                        <a href="#projects" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
                             Projects
                         </a>
-                        <a href="#" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
+                        <a href="#experience" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
+                            Experience
+                        </a>
+                        <a href="#skills" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
                             Skills
                         </a>
-                        <a href="#" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
+                        <a href="#contact" onClick={() => setIsOpen(false)} className="text-xl sm:text-2xl text-white hover:text-amber-400 transition-transform transform hover:scale-105">
                             Contact
                         </a>
                     </div>

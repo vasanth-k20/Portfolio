@@ -3,7 +3,7 @@ import { Linkedin, Github } from "lucide-react";
 
 export const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
+        <footer className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Grid Layout for Desktop, Stack on Mobile */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -19,19 +19,22 @@ export const Footer = () => {
                     {/* Navigation Links */}
                     <div className="flex flex-col space-y-4 text-[1.2em]">
                         <h3 className="text-lg font-semibold text-amber-400">Quick Links</h3>
-                        <a href="#" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
+                        <a href="#home" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
                             Home
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
+                        <a href="#about" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
                             About
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
+                        <a href="#projects" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
                             Projects
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
+                        <a href="#experience" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
+                            Experience
+                        </a>
+                        <a href="#skills" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
                             Skills
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
+                        <a href="#contact" className="text-gray-400 hover:text-amber-400 transition-transform transform hover:translate-x-2">
                             Contact
                         </a>
                     </div>
