@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
-        title: "Junior Software Developer | Brain Insights, Vellore, TamilNadu",
+        title: "Junior Software Developer | Brain Insight, Vellore, TamilNadu",
         date: "Nov 2024 – Present",
         description: [
             "Developed and Enhanced Web Applications: Worked with ASP.NET MVC to build and update web applications, organizing HTML in Views and managing CSS and JavaScript in the wwwroot folder.",
@@ -15,7 +15,7 @@ const experiences = [
         color: "bg-purple-500",
     },
     {
-        title: "Software Developer Intern | Brain Insights, Vellore, TamilNadu",
+        title: "Software Developer Intern | Brain Insight, Vellore, TamilNadu",
         date: "Sep 2024 - Nov 2024",
         description: [
             "Impressive Performance: Completed a 3-month internship and was onboarded as a full-time employee based on exceptional performance and contributions.",
