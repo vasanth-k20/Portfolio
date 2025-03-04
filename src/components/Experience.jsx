@@ -21,7 +21,7 @@ const experiences = [
             "Impressive Performance: Completed a 3-month internship and was onboarded as a full-time employee based on exceptional performance and contributions.",
             "Backend Support: Contributed to backend tasks such as debugging and enhancing functionalities for existing modules.",
             "Learning and Collaboration: Gained hands-on experience with real-world projects, collaborating with senior developers to improve code quality and efficiency.",
-            "Skill Development: Improved skills in C#, .NET, and SQL through practical tasks and feedback from the team."
+            "Skill Development: Improved skills in C# and ASP.NET through practical tasks and feedback from the team."
         ],
         color: "bg-blue-500",
     },
@@ -65,7 +65,7 @@ export const Experience = () => {
                                 </div>
                                 <div className="max-w-7xl ml-0 md:ml-8 mt-0 md:mt-10 bg-white shadow-lg rounded-lg p-4 sm:p-6 transition-transform transform hover:-translate-y-2">
                                     <h3 className="text-lg md:text-2xl font-semibold mb-2">{exp.title}</h3>
-                                    <ul className="list-disc list-inside text-lg md:text-xl">
+                                    <ul className="list-disc list-inside text-lg md:text-xl text-justify">
                                         {exp.description.map((point, idx) => (
                                             <li key={idx} className="mb-1">{point}</li>
                                         ))}

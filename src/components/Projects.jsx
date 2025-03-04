@@ -5,19 +5,19 @@ import { motion } from "framer-motion";
 const projects = [
     {
         title: "Project One",
-        gif: "/project1.gif",
+        gif: "/IEMS.gif",
         description: "A web application built with React and .NET to manage tasks efficiently.",
         github: "https://github.com/yourusername/project-one",
     },
     {
         title: "Project Two",
-        gif: "/project2.gif",
+        gif: "/ICCSI.gif",
         description: "An e-commerce platform using C#, SQL, and Azure DevOps for CI/CD.",
         github: "https://github.com/yourusername/project-two",
     },
     {
         title: "Project Three",
-        gif: "/project3.gif",
+        gif: "/crm.gif",
         description: "A portfolio site with ReactJS showcasing projects and skills.",
         github: "https://github.com/yourusername/project-three",
     },

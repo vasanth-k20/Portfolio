@@ -24,13 +24,13 @@ const About = () => {
                 {/* About Me Text */}
                 <div class="w-full md:w-1/2 px-4 md:px-8 lg:pl-16 text-center md:text-left">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-4 md:mb-6">About Me</h2>
-                    <p class="text-lg md:text-xl leading-relaxed mb-4">
+                    <p class="text-lg md:text-xl leading-relaxed mb-4 text-justify">
                         Hi, I'm a <span className="text-grey-700 font-bold">Junior Software Developer</span> with a passion for building efficient and scalable applications. I specialize in <span className="text-grey-700 font-bold">C#, ASP.NET Core, SQL, Azure DevOps,</span> and <span className="text-grey-700 font-bold">ReactJS</span>. I thrive on solving complex problems and constantly aim to improve my skills.
                     </p>
-                    <p class="text-lg md:text-xl leading-relaxed mb-4">
+                    <p class="text-lg md:text-xl leading-relaxed mb-4 text-justify">
                         With a strong foundation in both backend and frontend development, I enjoy transforming ideas into real-world applications. My experience with Azure DevOps helps me streamline development workflows and ensure high-quality deliverables.
                     </p>
-                    <p class="text-lg md:text-xl leading-relaxed mb-4">
+                    <p class="text-lg md:text-xl leading-relaxed mb-4 text-justify">
                         I am eager to collaborate on challenging projects that push my limits and allow me to grow as a developer. Let's connect and create something incredible together!
                     </p>
                 </div>
