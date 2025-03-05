@@ -27,7 +27,14 @@ export const Projects = () => {
     return (
         <section id="projects" className="min-h-[70vh] flex items-center py-16 px-6 md:px-12 lg:px-24 bg-white">
             <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-12 md:mt-8 md:mb-16 text-center">Projects</h2>
+            <motion.h2
+                    className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-12 md:mt-8 md:mb-16 text-center"
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                    Projects
+                </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {projects.map((project, index) => (
                         <motion.div
@@ -36,7 +43,7 @@ export const Projects = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             whileHover={{ scale: 1.05 }}
-                            className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-xl shadow-lg overflow-hidden relative transition-transform transform hover:-translate-y-2"
+                            className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl shadow-lg overflow-hidden relative transition-transform transform hover:-translate-y-2"
                         >
                             <div className="overflow-hidden">
                                 <img

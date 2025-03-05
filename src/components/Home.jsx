@@ -23,19 +23,19 @@ export const Home = () => {
             </motion.div>
 
             <motion.h6
-                className="font-style italic text-3xl md:text-6xl text-gray-800 tracking-wide mb-4"
+                className="text-3xl md:text-6xl text-gray-800 tracking-wide mb-4"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
             >
                 Hi 👋 I'm{' '}
-                <span className="not-italic bg-gradient-to-r from-gray-600 to-gray-900 text-transparent bg-clip-text">
+                <span className="not-italic">
                     Vasanth
                 </span>
             </motion.h6>
 
             <motion.h1
-                className="font-style italic text-gray-900 text-3xl md:text-6xl leading-tight mb-4"
+                className="text-gray-900 text-3xl md:text-6xl leading-tight mb-4"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
