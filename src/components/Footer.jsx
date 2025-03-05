@@ -9,7 +9,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                     {/* Brand and Description */}
                     <div className="space-y-4">
-                        <div className="text-3xl hover:text-yellow-300 transition-transform transform hover:scale-105">
+                        <div className="text-3xl hover:text-yellow-400 transition-transform transform hover:scale-105">
                             VASANTH
                         </div>
                         <p className="text-gray-400 text-[1.2em]">
@@ -59,8 +59,8 @@ export const Footer = () => {
                 </div>
 
                 {/* Copyright - Always Centered */}
-                <div className=" text-[1.2em] mt-8 pt-6 border-t border-gray-800 text-center text-gray-400 text-sm">
-                    © {new Date().getFullYear()} MyBrand. All rights reserved.
+                <div className=" text-[1.2em] mt-8 pt-6 border-t border-gray-500 text-center text-gray-400 text-sm">
+                    © {new Date().getFullYear()} All rights are reserved.
                 </div>
             </div>
         </footer>

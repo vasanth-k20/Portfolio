@@ -10,7 +10,7 @@ export const Header = () => {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */} 
                     <div className="flex items-center">
-                        <a href="/" className="text-3xl hover:text-yellow-200 transition-transform transform hover:scale-105">
+                        <a href="/" className="text-3xl hover:text-yellow-400 transition-transform transform hover:scale-105">
                             VASANTH
                         </a>
                     </div>
@@ -51,7 +51,7 @@ export const Header = () => {
 
             {/* Mobile Menu with Slide Animation */}
             {isOpen && (
-                <div className={`md:hidden fixed top-0 right-0 h-[50vh] w-64 bg-gray-900 bg-opacity-95 backdrop-blur-sm z-50 transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} rounded-b-lg shadow-lg overflow-y-auto`}>
+                <div className={`md:hidden fixed top-0 right-0 h-[60vh] w-64 bg-gray-900 bg-opacity-95 backdrop-blur-sm z-50 transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} rounded-b-lg shadow-lg overflow-y-auto`}>
                 <div className="flex justify-end p-4">
                         <button
                             onClick={() => setIsOpen(false)}

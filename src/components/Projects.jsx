@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
-        title: "Project One",
+        title: "Income and Expense Management System",
         gif: "/IEMS.gif",
-        description: "A web application built with React and .NET to manage tasks efficiently.",
-        github: "https://github.com/yourusername/project-one",
+        description: "The Income and Expense Management System built with ASP.NET MVC lets users track, categorize, and manage income and expenses, providing reports and insights for better financial planning and control.",
+        github: "https://github.com/vasanth-k20/Income-and-Expense-Management-System-Using-ASP.NET-MVC..git",
     },
     {
-        title: "Project Two",
+        title: "Conference Website",
         gif: "/ICCSI.gif",
-        description: "An e-commerce platform using C#, SQL, and Azure DevOps for CI/CD.",
-        github: "https://github.com/yourusername/project-two",
+        description: "The Conference Website built with ASP.NET MVC enables users to view event details, register, and manage schedules. It offers an organized platform for participants and administrators to streamline conference management efficiently.",
+        github: "https://github.com/vasanth-k20/InternationalConferenceWebsite.git",
     },
     {
-        title: "Project Three",
+        title: "Employee's Login System",
         gif: "/crm.gif",
-        description: "A portfolio site with ReactJS showcasing projects and skills.",
-        github: "https://github.com/yourusername/project-three",
+        description: "The Employee's Login System developed with ASP.NET Web API and HTML, CSS, JS enables employees to securely log in, track work hours, and view attendance, providing efficient user authentication and data management.",
+        github: "https://github.com/vasanth-k20/EmployeeLoginSystem_Front-End.git",
     },
 ];
 
