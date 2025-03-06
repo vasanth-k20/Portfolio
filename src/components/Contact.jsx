@@ -13,7 +13,7 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 setStatus('Message sent successfully!');
-                form.current.reset();
+                form.current.reset();  // Clear the form after successful submission
             }, (error) => {
                 console.log(error.text);
                 setStatus('Failed to send message. Please try again.');
@@ -24,12 +24,12 @@ const Contact = () => {
         <section id="contact" className="min-h-[50vh] flex items-center justify-center py-16 bg-neutral-100 px-6 md:px-12 lg:px-24">
             <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-8 w-[60%]">
                 <motion.h2
-                    className="text-3xl md:text-4xl font-bold mb-8 text-center"
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-0 mb-4 md:mt-0 md:mb-8 text-center"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    Contact Me
+                    Get In Touch
                 </motion.h2>
                 <form ref={form} onSubmit={sendEmail} className="space-y-6">
                     <div className="flex flex-col md:flex-row gap-6">
@@ -72,14 +72,16 @@ const Contact = () => {
                     </div>
                     <motion.button
                         type="submit"
-                        className="w-full py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition duration-300"
+                        className="w-full py-2 bg-gray-700 text-white text-xl rounded-md hover:bg-gray-500 transition duration-300"
                         whileTap={{ scale: 0.95 }}
                     >
                         Send Message
                     </motion.button>
                 </form>
                 {status && (
-                    <p className="text-center mt-4 text-green-500">{status}</p>
+                    <p className={`text-center text-2xl mt-4 ${status.includes('successfully') ? 'text-green-500' : 'text-red-500'}`}>
+                        {status}
+                    </p>
                 )}
             </div>
         </section>
