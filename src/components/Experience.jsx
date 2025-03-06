@@ -36,7 +36,7 @@ const experiences = [
 export const Experience = () => {
     return (
         <section id="experience" className="min-h-[70vh] flex items-center py-8 md:py-16 px-4 sm:px-6 md:px-12 lg:px-24 bg-neutral-100 overflow-x-hidden">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-[300em] mx-auto mb-1">
                 <motion.h2
                     className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-8 md:mt-8 md:mb-16 text-center"
                     initial={{ opacity: 0, y: -50 }}
@@ -45,7 +45,7 @@ export const Experience = () => {
                 >
                     Experience
                 </motion.h2>
-                <div className="relative max-w-5xl mx-auto">
+                <div className="relative max-w-6xl mx-auto">
                     <div className="pl-4 sm:pl-6">
                         {experiences.map((exp, index) => (
                             <motion.div
@@ -63,7 +63,7 @@ export const Experience = () => {
                                         transition={{ duration: 0.5 }}
                                     ></motion.div>
                                 </div>
-                                <div className="max-w-7xl ml-0 md:ml-8 mt-0 md:mt-10 bg-white shadow-lg rounded-lg p-4 sm:p-6 transition-transform transform hover:-translate-y-2">
+                                <div className="max-w-5xl ml-0 md:ml-8 mt-0 md:mt-10 bg-white shadow-lg rounded-lg p-4 sm:p-6 transition-transform transform hover:-translate-y-2">
                                     <h3 className="text-lg md:text-2xl font-semibold mb-2">{exp.title}</h3>
                                     <ul className="list-disc list-inside text-lg md:text-xl text-justify">
                                         {exp.description.map((point, idx) => (

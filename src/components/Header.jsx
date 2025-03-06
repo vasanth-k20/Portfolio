@@ -8,10 +8,10 @@ export const Header = () => {
         <nav className="z-50 bg-gradient-to-r from-gray-800 to-gray-700 text-white shadow-lg fixed top-0 w-full">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
-                    {/* Logo */} 
+                    {/* Logo */}
                     <div className="flex items-center">
-                        <a href="/" className="text-3xl hover:text-yellow-400 transition-transform transform hover:scale-105">
-                            VASANTH
+                        <a href="/" className="hover:text-yellow-400 transition-transform transform hover:scale-105">
+                            <img src="public/logo1.png" alt="Vasanth" className="w-16 h-16 object-contain" />
                         </a>
                     </div>
 
@@ -52,7 +52,7 @@ export const Header = () => {
             {/* Mobile Menu with Slide Animation */}
             {isOpen && (
                 <div className={`md:hidden fixed top-0 right-0 h-[60vh] w-64 bg-gray-900 bg-opacity-95 backdrop-blur-sm z-50 transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} rounded-b-lg shadow-lg overflow-y-auto`}>
-                <div className="flex justify-end p-4">
+                    <div className="flex justify-end p-4">
                         <button
                             onClick={() => setIsOpen(false)}
                             className="text-white hover:text-cyan-400 focus:outline-none"

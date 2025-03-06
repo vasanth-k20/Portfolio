@@ -10,10 +10,10 @@ export const Footer = () => {
                     {/* Brand and Description */}
                     <div className="space-y-4">
                         <div className="text-3xl hover:text-yellow-400 transition-transform transform hover:scale-105">
-                            VASANTH
+                        <img src="public/logo1.png" alt="Vasanth" className="w-16 h-16 object-contain" />
                         </div>
                         <p className="text-gray-400 text-[1.2em]">
-                            Empowering businesses with innovative solutions and cutting-edge technology.
+                            Junior Software Developer
                         </p>
                     </div>
                     {/* Navigation Links */}
@@ -52,8 +52,8 @@ export const Footer = () => {
                         </div>
                         <div className="mt-4">
                             <h3 className="text-2xl font-semibold text-yellow-400">Contact Info</h3>
-                            <p className="text-gray-400 text-[1.2em]">Email: info@mybrand.com</p>
-                            <p className="text-gray-400 text-[1.2em]">Phone: +1 (123) 456-7890</p>
+                            <p className="text-gray-400 text-[1.2em]">Email: vasanthvvkk03@gmail.com</p>
+                            <p className="text-gray-400 text-[1.2em]">Phone: 9360240518</p>
                         </div>
                     </div>
                 </div>
