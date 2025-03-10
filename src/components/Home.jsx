@@ -14,7 +14,7 @@ export const Home = () => {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
                 <motion.img
-                    src="/aboutgif.gif"
+                    src="/Vasanth.jpg"
                     alt="Vasanth"
                     className="h-[15em] w-[15em] md:h-[20em] md:w-[20em] rounded-full object-cover border-2"
                     whileHover={{ scale: 1.1 }}
