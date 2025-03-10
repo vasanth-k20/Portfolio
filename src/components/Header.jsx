@@ -11,7 +11,7 @@ export const Header = () => {
                     {/* Logo */}
                     <div className="flex items-center">
                         <a href="/" className="hover:text-yellow-400 transition-transform transform hover:scale-105">
-                            <img src="public/logo1.png" alt="Vasanth" className="w-16 h-16 object-contain" />
+                            <img src="public\logo1.png" alt="Vasanth" className="w-16 h-16 object-contain" />
                         </a>
                     </div>
 
