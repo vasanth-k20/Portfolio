@@ -71,7 +71,7 @@ export const Experience = () => {
                                         ))}
                                     </ul>
                                 </div>
-                                <div className="absolute left-0 ml-4 text-xs md:text-xl text-black-500 mt-2 md:mt-0">
+                                <div className="absolute left-0 ml-4 text-lg md:text-xl text-black-500 mt-2 md:mt-0">
                                     {exp.date}
                                 </div>
                             </motion.div>
