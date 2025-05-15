@@ -5,7 +5,7 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="z-50 bg-gradient-to-r from-gray-800 to-gray-700 text-white shadow-lg fixed top-0 w-full">
+        <nav className="z-50 bg-gradient-to-r from-[#202B3B] to-gray-700 text-white fixed top-0 w-full">
             <div className="max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}

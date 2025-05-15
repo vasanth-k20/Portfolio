@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { RiMessage2Line } from "react-icons/ri";
+import { b } from 'framer-motion/client';
 
 export const Home = () => {
     return (
@@ -7,10 +9,10 @@ export const Home = () => {
             id="home"
             style={{ backgroundImage: "url('/hero.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-            <div className="relative flex flex-col md:flex-row justify-center items-center min-h-screen px-6 text-center md:text-left max-w-[100%] mx-auto ">
+            <div className="relative flex flex-col md:flex-row items-center min-h-screen px-6 text-center md:text-left max-w-[100%] mx-auto ">
                 {/* Profile Photo */}
                 <motion.div
-                    className="flex justify-center mt-10 md:mt-0 md:ml-10"
+                    className="flex justify-center mt-10 md:mt-0 md:ml-10 lg:ml-115"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -25,23 +27,24 @@ export const Home = () => {
                 </motion.div>
 
                 {/* Text Content */}
-                <div className="flex flex-col items-center md:items-start mt-8 md:mt-0 md:ml-50">
+                <div className="flex flex-col items-center md:items-start mt-8 md:mt-0 md:ml-70">
+                    
                     <motion.h6
-                        className="text-3xl md:text-6xl text-gray-800 tracking-wide mb-4"
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-                    >
-                        Hi 👋 I'm <span className="not-italic">Vasanth</span>
-                    </motion.h6>
-
-                    <motion.h1
-                        className="text-gray-900 text-3xl md:text-6xl leading-tight mb-4"
+                        className="text-gray-900 text-2xl md:text-3xl leading-tight mb-2"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
                     >
                         Junior Software Developer
+                    </motion.h6>
+                    
+                    <motion.h1
+                        className="text-3xl md:text-6xl text-gray-800 tracking-wide mb-4"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+                    >
+                        <span className="not-italic">Vasanth</span>
                     </motion.h1>
 
                     <motion.p
@@ -86,7 +89,7 @@ export const Home = () => {
                             href="#contact"
                             className="flex items-center justify-center px-6 py-3 md:px-8 md:py-3 font-medium md:font-semibold border-2 border-gray-700 text-gray-700 text-xs md:text-lg rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500"
                         >
-                            Contact
+                           <RiMessage2Line/> <p className="pl-2.5">Contact</p>
                         </a>
                     </motion.div>
                 </div>
