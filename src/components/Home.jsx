@@ -1,18 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { RiMessage2Line } from "react-icons/ri";
-import { b } from 'framer-motion/client';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export const Home = () => {
     return (
         <section
             id="home"
-            style={{ backgroundImage: "url('/hero.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+            // style={{ backgroundImage: "url('/hero.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <div className="relative flex flex-col md:flex-row items-center min-h-screen px-6 text-center md:text-left max-w-[100%] mx-auto ">
                 {/* Profile Photo */}
                 <motion.div
-                    className="flex justify-center mt-10 md:mt-0 md:ml-10 lg:ml-115"
+                    className="flex justify-center mt-10 md:mt-0 md:ml-10 lg:ml-90"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -20,7 +20,7 @@ export const Home = () => {
                     <motion.img
                         src="/asanth.jpg"
                         alt="Vasanth"
-                        className="h-[15em] w-[15em] md:h-[20em] md:w-[20em] rounded-full object-cover border-2"
+                        className="h-[15em] w-[15em] md:h-[22em] md:w-[22em] rounded-full object-cover border-2"
                         whileHover={{ scale: 1.1 }}
                         transition={{ duration: 0.3 }}
                     />
@@ -90,6 +90,47 @@ export const Home = () => {
                             className="flex items-center justify-center px-6 py-3 md:px-8 md:py-3 font-medium md:font-semibold border-2 border-gray-700 text-gray-700 text-xs md:text-lg rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500"
                         >
                            <RiMessage2Line/> <p className="pl-2.5">Contact</p>
+                        </a>
+                    </motion.div>
+
+                    {/* Social Media Icons */}
+                    <motion.div
+                        className="flex gap-4 mt-6"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.8, delay: 1, ease: 'easeOut' }}
+                    >
+                        <a 
+                            href="https://github.com/yourusername" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
+                        >
+                            <FaGithub className="w-6 h-6 md:w-7 md:h-7" />
+                        </a>
+                        <a 
+                            href="https://linkedin.com/in/yourusername" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
+                        >
+                            <FaLinkedin className="w-6 h-6 md:w-7 md:h-7" />
+                        </a>
+                        <a 
+                            href="https://twitter.com/yourusername" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
+                        >
+                            <FaTwitter className="w-6 h-6 md:w-7 md:h-7" />
+                        </a>
+                        <a 
+                            href="https://instagram.com/yourusername" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
+                        >
+                            <FaInstagram className="w-6 h-6 md:w-7 md:h-7" />
                         </a>
                     </motion.div>
                 </div>
